@@ -9,12 +9,12 @@
     <<
     \new Staff
     <<
-    \set Staff.instrumentName = "Flute"
+    \set Staff.instrumentName = "Flûte"
     \new Voice {\PartPOneVoiceOne}
     \new Voice {\track}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -27,12 +27,12 @@
     <<
     \new Staff
     <<
-    \set Staff.instrumentName = "Clarinet"
+    \set Staff.instrumentName = "Clarinette"
     \new Voice {\transpose bes c'{\transposition bes \PartPTwoVoiceOne}}
     \new Voice {\track}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -45,12 +45,12 @@
     <<
     \new Staff
     <<
-    \set Staff.instrumentName = "Alto Sax"
+    \set Staff.instrumentName = "Saxophone Alto"
     \new Voice {\transpose ees c'{\transposition ees \PartPThreeVoiceOne}}
     \new Voice {\track}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -64,12 +64,12 @@
     <<
     \new Staff
     <<
-    \set Staff.instrumentName = "Trumpet"
+    \set Staff.instrumentName = "Trompette"
     \new Voice {\transpose bes c'{ \transposition bes \PartPThreeVoiceTwo}}
     \new Voice {\track}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -83,12 +83,12 @@
     <<
     \new Staff
     <<
-    \set Staff.instrumentName = "Violin I"
+    \set Staff.instrumentName = "Violon I"
     \new Voice {\PartPFiveVoiceOne}
     \new Voice {\track}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -101,12 +101,12 @@
     <<
     \new Staff
     <<
-    \set Staff.instrumentName = "Violin II"
+    \set Staff.instrumentName = "Violon II"
     \new Voice {\PartPSixVoiceOne}
     \new Voice {\track}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -119,12 +119,12 @@
     <<
     \new Staff
     <<
-    \set Staff.instrumentName = "Cello"
+    \set Staff.instrumentName = "Violoncelle"
     \new Voice {\clef bass \PartPSevenVoiceTwo}
     \new Voice {\track}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -142,7 +142,7 @@
     \new Voice {\track}
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }
 
@@ -166,6 +166,6 @@
 
     >>
     >>
-    \layout {#(layout-set-staff-size 16)}
+    %\layout {#(layout-set-staff-size 16)}
   }
 }

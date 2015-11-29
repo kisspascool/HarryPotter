@@ -1,21 +1,11 @@
 \version "2.18.2"
 
-% TODO
-% Simplification partie Basse et violoncelles et ... ?
-% Accords basse mesure 7 -> ensemble des cordes
-% Ecrire partie de Basse à partir de D (identique violon 2 ?)
-% Mesure 30 Violoncelle -> Violon 1
-% Tessitures parties
-% Nuances midi
-% Ajouter mesure de fin avec accord de la bonne tonalité
-% fontsize parties separees
-
 \header {
   title = "Harry Potter"
-  composer = "John Williams, Alexander Desplat"
+  composer = "John Williams, Alexandre Desplat"
   arranger = "Ryan Clare"
   % Supprimer le pied de page par défaut
-  tagline = "v.0.1"
+  tagline = "v.0.9"
 }
 \paper {
   #(set-paper-size "a3")
@@ -64,10 +54,7 @@ track = {
    \time 3/4
    s2.*18 \mark \default \bar "||" %135
    \time 6/8
-   s2.*5 \bar "|."
-
-
-
+   s2.*6 \bar "|."
 }
 
 PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
@@ -218,7 +205,8 @@ PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
   d4. <g, b>4. | % 137
   a8. c16 b8 g4 bes8 | % 138
   a2. | % 139
-  <cis, a'>2. \fermata \bar "|."
+  <cis, a'>2. \fermata |
+  a2. \fermata \bar "|."
 }
 
 PartPTwoVoiceOne =  \relative b' {% Voix 2, original Vibraphone 1, now Clarinet
@@ -410,7 +398,8 @@ PartPTwoVoiceOne =  \relative b' {% Voix 2, original Vibraphone 1, now Clarinet
   d4. <g, b>4. | % 137
   a8. c16 b8 g4 bes8 | % 138
   <d, a'>2. | % 139
-  <cis a'>2. \fermata \bar "|."
+  <cis a'>2. \fermata |
+  cis2. \fermata \bar "|."
 }
 
 PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxophone
@@ -431,11 +420,11 @@ PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxopho
   d'4 cis8 c4 gis8 | % 16
   c8. b16 ais8 ais,4 g'8 | % 17
   e4. r4 r8 | % 18
-  e4. a,4 b,8 | % 19
+  e4. a,4 b8 | % 19
   <b e>4. \mf \> e4. \! |
   <b e>4. \mf \> e4. \! | % 21
   <b e>4. \mf \> e4. \! | % 22
-  <b fis'>4. \mf fis'4 b8 | % 23
+  <b fis'>4. \mf fis4 b8 | % 23
   e8. g16 fis8 e4 b'8 | % 24
   d4 cis8 c4 gis8 | % 25
   c8. b16 ais8 cis,4 g'8 | % 26
@@ -459,7 +448,7 @@ PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxopho
   <g, e'>8 \! \mf <g d'>8 <g f'>4 <g d'>4 | % 43
   <g e'>8 <g d'>8 <g f'>4 <g d'>4 | % 44
   <g e'>8 <g d'>8 <g f'>4 <g e'>4 | % 45
-  \time 2/4  <f c'>4 <g d'>4 | % 46
+  \time 2/4  <f' c'>4 <g d'>4 | % 46
   \time 4/4  e8 e8 e8 e8 e8 e8 dis8 e8 | % 47
   f4 e8 dis8 e4 b4 | % 48
   c4 c8 b8 c4 e4 | % 49
@@ -469,7 +458,7 @@ PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxopho
   f'4 e8 dis8 e4 g,4 | % 53
   b2 a2 | % 54
   \time 3/4  | % 54
-  c'4 \mp g'4 g4 | % 55
+  c4 \mp g'4 g4 | % 55
   g4 f4 c'4 | % 56
   e4 c4 e,4 | % 57
   e4 d2 | % 58
@@ -481,7 +470,7 @@ PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxopho
   <g e'>8 <g d'>8 <g f'>4 <g d'>4 | % 64
   <g e'>8 <g d'>8 <g f'>4 <g e'>4 | % 65
   \time 2/4  <f c'>4 <g d'>4 | % 66
-  \time 4/4  a8 a8 a8 a8 a8 a8 gis8 a8 | % 67
+  \time 4/4  a'8 a8 a8 a8 a8 a8 gis8 a8 | % 67
   ais4 a8 gis8 a4 e4 | % 68
   f4 f8 e8 f4 a,4 | % 69
   a8 r8 c8 e8 gis2 |
@@ -490,7 +479,7 @@ PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxopho
   ais4 a8 gis8 a4 c,4 | % 73
   f2 gis,4 r4 | % 74
   \key as \major \time 3/2 | % 74
-  <f' f'>1. \mp | %75
+  <f f'>1. \mp | %75
   <f f'>1. | % 76
   <f f'>1. ~ ~ | % 77
   <f f'>1 \< <f f'>2 | % 78
@@ -526,7 +515,7 @@ PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxopho
   r8 cis16 cis16 cis8 cis8 cis8 cis8 d8 e8 | % 106
   d8. e16 a,8 f8 r8 f8 r8 f8 | % 107
   r8 b16 b16 b8 b8 b8 b8 b8 b8 | % 108
-  c4 r4 c,4 d8 e8 | % 109
+  c4 r4 c4 d8 e8 | % 109
   a8 <f a>8 r8 <f a>8 r8 g8 r8 g8 |
   r8 bes8 r8 bes8 r8 <f a>8 r8 <f a>8 | % 111
   r8 f8 r8 f8 r8 f8 r8 f8 | % 112
@@ -544,7 +533,7 @@ PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxopho
   <gis b>2. | % 123
   <fis, d'>2. | % 124
   fis'4 eis2 | % 125
-  a'4 \mf b4 cis4 | % 126
+  a4 \mf b4 cis4 | % 126
   cis4 b4 a4 | % 127
   gis4 a4 b4 | % 128
   a4 gis4 fis4 | % 129
@@ -558,19 +547,20 @@ PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxopho
   a,4. \mf a4. | % 136
   b4. g4. | % 137
   a4. b4. | % 138
-  <d, a'>2. | % 139
-  <cis a'>2. \fermata \bar "|."
+  <d a'>2. | % 139
+  <cis a'>2. \fermata |
+  e2. \fermata \bar "|."
 }
 
 PartPThreeVoiceTwo =  \relative e' {% Voix 3, original Vibraphone 2, now Trompettes
   \global \clef "treble" \key g \major r2. | % 2
-  e4. \mp e4. | % 3
+  e'4. \mp e4. | % 3
   e4. e4. | % 4
   e4. ais4 b,8 | % 5
   e4 g8 b4 b,8 | % 6
   e4. e4. | % 7
-  d'4 cis8 c4 gis8 | % 8
-  c8. b16 ais8 cis,4 g'8 | % 9
+  d4 cis8 c4 gis8 | % 8
+  c8. b16 ais8 cis4 g8 | % 9
   e4 g8 b4 b,8 |
   e4 g8 b4 b,8 | % 11
   e4 g8 c4 b,8 | % 12
@@ -580,18 +570,18 @@ PartPThreeVoiceTwo =  \relative e' {% Voix 3, original Vibraphone 2, now Trompet
   d'4 cis8 c4 gis8 | % 16
   c8. b16 ais8 ais,4 g'8 | % 17
   e4. r4 r8 | % 18
-  e4. a,4 b,8 | % 19
+  e'4. a,4 b,8 | % 19
   <b e>4. \mf \> e4. \! |
   <b e>4. \mf \> e4. \! | % 21
   <b e>4. \mf \> e4. \! | % 22
-  <b fis'>4. \mf fis'4 b8 | % 23
+  <b fis'>4. \mf fis'4 b,8 | % 23
   e8. g16 fis8 e4 b'8 | % 24
   d4 cis8 c4 gis8 | % 25
   c8. b16 ais8 cis,4 g'8 | % 26
   e4. e4 g8 | % 27
   b4 g8 b4 g8 | % 28
   c4 b8 ais4 fis8 | % 29
-  g8. b16 ais8 ais,4 b8 |
+  g8. b16 ais8 ais4 b8 |
   b'4. b4 g8 | % 31
   b4 g8 b4 g8 | % 32
   <d d'>4 cis'8 <c, c'>4 gis'8 | % 33
@@ -708,7 +698,8 @@ PartPThreeVoiceTwo =  \relative e' {% Voix 3, original Vibraphone 2, now Trompet
   b4. g4. | % 137
   a4. b4. | % 138
   <d, a'>2. | % 139
-  <cis a'>2. \fermata \bar "|."
+  <cis a'>2. \fermata |
+  e2. \fermata \bar "|."
 }
 
 PartPFourVoiceOne =  \relative e' {% Voix 4, original Tubular Bells
@@ -749,13 +740,18 @@ PartPFourVoiceOne =  \relative e' {% Voix 4, original Tubular Bells
   R2 | % 93
   \time 4/4  R1*24 | % 117
   \key a \major \time 3/4 R2.*18 | % 135
-  \key c \major \time 6/8 R2.*5 \bar "|."
-  %-"accel."
+  \key c \major \time 6/8 R2.*6 \bar "|."
 }
 
 PartPFiveVoiceOne =  \relative e' {% Voix 5, original Xylophone 1 now Violon I
   \global \transposition c'' \clef "treble" \key g \major r2. | % 2
-  R2.*16 | % 18
+  R2.*5 | %7
+  d4. c4. |%8
+  c4. cis4. |%9
+  R2.*6 |%15
+  d4. c4. |%16
+  c4. cis4. |%17
+  R2. | % 18
   e4. \mp e4. \< | % 19
   e'4. e4. |
   e4. e4. | % 21
@@ -884,12 +880,19 @@ PartPFiveVoiceOne =  \relative e' {% Voix 5, original Xylophone 1 now Violon I
   d4. <g, b>4. | % 137
   a8. c16 b8 g4 bes8 | % 138
   <d, a'>4. <d a'>4. | % 139
-  <cis a'>4. <cis a'>4. \fermata \bar "|."
+  <cis a'>4. <cis a'>4. \fermata |
+  a2. \fermata \bar "|."
 }
 
 PartPSixVoiceOne =  \relative e' {% Voix 6, original Xylophone 2 now Violon II
   \global \transposition c'' \clef "treble" \key g \major r2. | % 2
-  R2.*16 | % 18
+  R2.*5 |%7
+  bes'4. as4. |%8
+  a4. fis4. |%9
+  R2.*6 |%15
+  bes4. as4. |%16
+  a4. fis4. |%17
+  R2.| % 18
   e4. \mp e4. \< | % 19
   e'4. e4. |
   e4. e4. | % 21
@@ -995,18 +998,18 @@ PartPSixVoiceOne =  \relative e' {% Voix 6, original Xylophone 2 now Violon II
   bes4 g4 f4 c'4 | % 116
   g4 c4 f,2 | % 117
   \key a \major \time 3/4 | % 117
-  e,2. \p | % 118
-  <e gis>2. | % 119
+  e2. \p | % 118
+  gis2. | % 119
   fis2. |
   gis2. | % 121
   fis2. | % 122
   eis4 eis2 | % 123
   fis2. | % 124
   gis2. | % 125
-  <a e'>2. \mp | % 126
-  <gis e'>2. | % 127
-  <fis d'>2. | % 128
-  <e b'>2. | % 129
+  e'2. \mp | % 126
+  e2. | % 127
+  d2. | % 128
+  b2. | % 129
   a4 b4 cis4 |
   cis4 d4 e4 | % 131
   d4 e4 fis4 | % 132
@@ -1017,12 +1020,19 @@ PartPSixVoiceOne =  \relative e' {% Voix 6, original Xylophone 2 now Violon II
   b4. b4. | % 137
   a4. b4. | % 138
   <d, a'>2. | % 139
-  <cis a'>2. \fermata \bar "|."
+  <cis a'>2. \fermata |
+  cis2. \fermata \bar "|."
 }
 
-PartPSevenVoiceOne =  \relative e' {% Voix 7, original Marimba main droite, now Piano main droite
+PartPSevenVoiceOne =  \relative e' {% Voix 7, original Marimba main droite, now Cello
   \global \clef "treble" \key g \major r2.| % 2
-  R2.*17 | % 19
+  R2.*5 |%7
+  g4. f4.|%8
+  e4. e4. |%9
+  R2.*6 |%15
+  g4. f4.|%16
+  e4. e4. |%17
+  R2.*2 | % 19
   R2. |
   R2. | % 21
   R2. | % 22
@@ -1102,7 +1112,7 @@ PartPSevenVoiceOne =  \relative e' {% Voix 7, original Marimba main droite, now 
   \key f \major \time 2/4 | % 92
   R2 | % 93
   \time 4/4  | % 93
-  c'4. \mf \< -"accel."  c16 c16 c4 c4 \ff| % 94
+  c4. \mf \< -"accel."  c16 c16 c4 c4 \ff| % 94
   d4. e16 f16 c4 f,4 | % 95
   bes4. c16 bes16 a8 c8 e8 f8 | % 96
   g4. f16 e16 d8 c8 g'16 f16 e16 d16 | % 97
@@ -1150,7 +1160,8 @@ PartPSevenVoiceOne =  \relative e' {% Voix 7, original Marimba main droite, now 
   d4. <g, b>4. | % 137
   a8. c16 b8 g4 bes8 | % 138
   <d, a'>4. <d a'>4. | % 139
-  <cis a'>4. <cis a'>4. \fermata \bar "|."
+  <cis a'>4. <cis a'>4. \fermata |
+  e2. \fermata \bar "|."
 }
 
 PartPEightVoiceOne =  \relative e {% Voix 8, original Marimba main gauche, now Piano Main Gauche
@@ -1220,10 +1231,10 @@ PartPEightVoiceOne =  \relative e {% Voix 8, original Marimba main gauche, now P
   \key f \major \time 2/4 <f f'>2 | % 93
   \time 4/4  R1*24 | % 117
   \key a \major \time 3/4 R2.*18 | % 135
-  \key c \major \time 6/8 R2.*5 \bar "|."
+  \key c \major \time 6/8 R2.*6 \bar "|."
 }
 
-PartPSevenVoiceTwo =  \relative e {% Voix 7, original Marimba main droite, now Cello
+PartPSevenVoiceTwo =  \relative e {% Voix 7, original Marimba main droite, now Piano Main droite
   \global \clef "bass" \key g \major r2.| % 2
   R2.*17 | % 19
   R2. |
@@ -1353,7 +1364,8 @@ PartPSevenVoiceTwo =  \relative e {% Voix 7, original Marimba main droite, now C
   d4. <g, b>4. | % 137
   a8. c16 b8 g4 bes8 | % 138
   <d, a'>4. <d a'>4. | % 139
-  <cis a'>4. <cis a'>4. \fermata \bar "|."
+  <cis a'>4. <cis a'>4. \fermata |
+  <a cis e a>2. \fermata \bar "|."
 }
 
 PartPEightVoiceTwo =  \relative e {% Voix 8, original Marimba main gauche, now Basse
@@ -1363,17 +1375,17 @@ PartPEightVoiceTwo =  \relative e {% Voix 8, original Marimba main gauche, now B
   e4. ais4 b,8 | % 5
   e4 g8 b4 b,8 | % 6
   e4. e4. | % 7
-  <d g bes d>4. <c f as c>4. | % 8
-  <c e a c>4. <cis e fis cis'>4. | % 9
+  d4. c4. | % 8
+  c4. cis4. | % 9
   e4 g8 b4 b,8 |
   e4 g8 b4 b,8 | % 11
   e4 g8 c4 b,8 | % 12
   e4 g8 c,4 g'8 | % 13
   e4 g8 b4 b,8 | % 14
   e4 g8 b4 g8 | % 15
-  <bes, d g bes d>4. <as c f as c>4. | % 16
-  <a c e a c>4. <fis cis' e fis cis'>4. | % 17
-  e'4 g8 b4 b,8 | % 18
+  d4. c4. | % 16
+  c4. cis4. | % 17
+  e4 g8 b4 b,8 | % 18
   e4 g8 fis4 b,8 | % 19
   b4. e4. |
   b4. e4. | % 21
@@ -1416,14 +1428,61 @@ PartPEightVoiceTwo =  \relative e {% Voix 8, original Marimba main gauche, now B
   d'4 fis,4 b4 fis4 d'4 fis,4 | % 86
   c'4 g4 es'4 g,4 c4 g4 | % 87
   es'4 g,4 c4 g4 es'4 g,4 | % 88
-  <as des f>1. | % 89
-  <b d fis gis>1. |
-  <as des f>1. | % 91
-  <fis gis b d>1. | % 92
-  \key f \major \time 2/4 <f f'>2 | % 93
-  \time 4/4  R1*24 | % 117
-  \key a \major \time 3/4 R2.*18 | % 135
-  \key c \major \time 6/8 R2.*5 \bar "|."
+  des1. | % 89
+  d1. |%90
+  f1. | % 91
+  b1. | % 92
+  \key f \major \time 2/4 f2 | % 93
+  \time 4/4  | % 93
+  f4 \f c'4 e,4 g4 | % 94
+  bes4 d4 c4 a4 | % 95
+  bes4 g4 f4 c'4 | % 96
+  g4 b4 c4 c,4 | % 97
+  f4 c'4 e,4 g4 | % 98
+  bes4 d4 c4 a4 | % 99
+  bes4 g4 f4 c'4 |
+  g4 c4 f,4 f'4 | % 101
+  a,4 e4 a4 e4 | % 102
+  a4 d8 e8 f8. e16 d8 a8 | % 103
+  g4 d4 g4 d4 | % 104
+  g8 c8 d8 e8 e8. d16 c8 a8 | % 105
+  a4 e4 a4 e4 | % 106
+  a4 d8 e8 f8. e16 d8 a8 | % 107
+  g4 d4 g4 d4 | % 108
+  c'4 r4 c,4 d8 e8 | % 109
+  f4 c'4 e,4 g4 |
+  bes4 d4 c4 a4 | % 111
+  bes4 g4 f4 c'4 | % 112
+  g4 b4 c4 c,4 | % 113
+  f4 c'4 e,4 g4 | % 114
+  bes4 d4 c4 a4 | % 115
+  bes4 g4 f4 c'4 | % 116
+  g4 c4 f,2 | % 117
+  \key a \major \time 3/4 | % 117
+  e,2. \p | % 118
+  e2. | % 119
+  fis2. |
+  gis2. | % 121
+  fis2. | % 122
+  eis4 eis2 | % 123
+  fis2. | % 124
+  gis2. | % 125
+  a2. \mp | % 126
+  gis2. | % 127
+  fis2. | % 128
+  e2. | % 129
+  a4 b4 cis4 |
+  cis4 d4 e4 | % 131
+  d4 e4 fis4 | % 132
+  gis8 a8 b4 cis4 | % 133
+  b,2. | % 134
+  a2. | % 135
+  \key c \major \time 6/8 a4. a4. | % 136
+  b4. b4. | % 137
+  a4. b4. | % 138
+  d,2. | % 139
+  cis2. \fermata |
+  a2. \fermata \bar "|."
 }
 
 
@@ -1447,7 +1506,7 @@ celloPart = \new Staff \with {
   instrumentName = "Violoncelle"
   shortInstrumentName = "Cello"
   midiInstrument = "cello"
-} { \clef bass \PartPSevenVoiceTwo}
+} { \clef bass \PartPSevenVoiceOne}
 
 bassPart = \new Staff \with {
   midiInstrument = "contrabass"
@@ -1485,7 +1544,7 @@ pianoPart = \new PianoStaff \with {
 } <<
   \new Staff = "right" \with {
     midiInstrument = "acoustic grand"
-  } \PartPSevenVoiceOne
+  } \PartPSevenVoiceTwo
   \new Staff = "left" \with {
     midiInstrument = "acoustic grand"
   } { \clef bass \PartPEightVoiceOne }
