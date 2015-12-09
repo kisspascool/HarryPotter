@@ -45,7 +45,7 @@
     <<
     \new Staff
     <<
-    \set Staff.instrumentName = "Saxophone Alto"
+    \set Staff.instrumentName = "Sax Alto"
     \new Voice {\transpose ees c'{\transposition ees \PartPThreeVoiceOne}}
     \new Voice {\track}
     >>

@@ -5,7 +5,7 @@
   composer = "John Williams, Alexandre Desplat"
   arranger = "Ryan Clare"
   % Supprimer le pied de page par défaut
-  tagline = "v.0.9"
+  tagline = "v.1.0"
 }
 \paper {
   #(set-paper-size "a3")
@@ -32,28 +32,30 @@ track = {
    \time 3/8
    s4. |%35
    \time 6/8
-   s2.*3 \mark \default \bar "||" %38
-   \time 3/4
+   s2. |%36
+   \tempo 4.=60 s2. |%37
+   \tempo 4.=66 s2. \mark \default \bar "||" %38
+   \time 3/4 \tempo 4=107
    s2.*7 |%45
    \time 2/4
    s2 |%46
-   \time 4/4
+   \time 4/4 \tempo 4=165
    s1*8 |%54
-   \time 3/4
+   \time 3/4 \tempo 4=107
    s2.*11 |%65
    \time 2/4
    s2 |%66
-   \time 4/4
+   \time 4/4 \tempo 4=165
    s1*8 \mark \default \bar "||" %74
-   \time 3/2
+   \time 3/2 \tempo 2=92
    s1.*18 |%92
-   \time 2/4
-   s2 \mark \default \bar "||" %93
-   \time 4/4
+   \time 2/4 \tempo 2=108
+   s4 \tempo 2=124 s4 \mark \default \bar "||" %93
+   \time 4/4 \tempo 4=124
    s1*24 \mark \default \bar "||" %117
-   \time 3/4
+   \time 3/4 \tempo 4=92
    s2.*18 \mark \default \bar "||" %135
-   \time 6/8
+   \time 6/8 \tempo 4.=43
    s2.*6 \bar "|."
 }
 
@@ -91,10 +93,9 @@ PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
   \time 6/8  e'4 c8 e4 c8 | % 36
   \tempo 4.=60 | % 36
   f4 -"accel." e8 dis4 dis8 | % 37
-  \tempo 4.=66 | % 37
   e8. c16 a8 dis,4 c8 | % 38
   \time 3/4  | % 38
-  \tempo 4=107 c4 g'4 g4 | % 39
+   c4 g'4 g4 | % 39
   g4 f4 c'4 |
   e4 c4 e,4 | % 41
   e4 d4 a'16 \< b16 a32 b32 c32 d32 | % 42
@@ -103,7 +104,7 @@ PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
   e8 d8 f4 e4 | % 45
   \time 2/4  c4 d4 | % 46
   \time 4/4  | % 46
-  \tempo 4=165 b8 b8 b8 b8 b8 b8 ais8 b8 | % 47
+  b8 b8 b8 b8 b8 b8 ais8 b8 | % 47
   c4 b8 ais8 b4 g4 | % 48
   a4 a8 gis8 a4 c,4 | % 49
   b8 r8 e8 g8 ais2 |
@@ -112,7 +113,7 @@ PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
   c'4 b8 ais8 b4 e,4 | % 53
   g2 dis2 | % 54
   \time 3/4  | % 54
-  \tempo 4=107 c4 \mf g'4 g4 | % 55
+  c4 \mf g'4 g4 | % 55
   g4 f4 c'4 | % 56
   e4 c4 e,4 | % 57
   e4 d2 | % 58
@@ -125,7 +126,7 @@ PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
   e8 d8 f4 e4 | % 65
   \time 2/4  c4 d4 | % 66
   \time 4/4  | % 66
-  \tempo 4=165 e8 e8 e8 e8 e8 e8 dis8 e8 | % 67
+  e8 e8 e8 e8 e8 e8 dis8 e8 | % 67
   f4 e8 dis8 e4 c4 | % 68
   d4 d8 cis8 d4 f,4 | % 69
   e8 r8 a8 c8 dis2 |
@@ -134,7 +135,6 @@ PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
   f'4 e8 dis8 e4 a,4 | % 73
   c2 e,4 r4 | % 74
   \key as \major \time 3/2 R1.*2 | % 76
-  \tempo 2=92 | % 76
   f2 \mf c2 as2 | % 77
   as'2 \< g2 f2 | % 78
   f2 des2 as2 | % 79
@@ -152,9 +152,9 @@ PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
   as'2 ges4 f4 des'4 des,4 | % 91
   fis2 b2 d,2 | % 92
   \key f \major \time 2/4 | % 92
-  \tempo 2=108 f8 -"accel." \< g8 \tempo 2=124 a8 bes8 | % 93
+  f8 -"accel." \< g8 a8 bes8 | % 93
   \time 4/4  | % 93
-  \tempo 4=124 f4 \! \f c'4 e,4 g4 | % 94
+  f4 \! \f c'4 e,4 g4 | % 94
   bes4 d4 c4 a4 | % 95
   bes4 g4 f4 c'4 | % 96
   g4 b4 c4 c,4 | % 97
@@ -177,10 +177,9 @@ PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
   f4 c'4 e,4 g4 | % 114
   bes4 d4 c4 a4 | % 115
   bes4 g4 f4 c'4 | % 116
-  \tempo 4=108 | % 116
   g4 c4 f,2 | % 117
   \key a \major \time 3/4 | % 117
-  \tempo 4=92 a4 \p b4 cis4 | % 118
+  a4 \p b4 cis4 | % 118
   cis4 b4 a4 | % 119
   gis4 a4 b4 |
   a4 gis4 fis4 | % 121
@@ -188,12 +187,10 @@ PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
   <cis eis>2. | % 123
   <d gis>2 fis4 | % 124
   <gis, cis>2. | % 125
-  \tempo 4=110 | % 125
   a'4 \mf b4 cis4 | % 126
   cis4 b4 a4 | % 127
   gis4 a4 b4 | % 128
   a4 gis4 fis4 | % 129
-  \tempo 4=100 | % 129
   a,4 b4 cis4 |
   cis4 d4 e4 | % 131
   d4 e4 fis4 | % 132
@@ -201,7 +198,7 @@ PartPOneVoiceOne =  \relative b' { %Voix 1, original Glockenspiel, now Flute
   d4 e2 | % 134
   <d fis>4 <e gis>2 | % 135
   \key c \major \time 6/8 | % 135
-  \tempo 4.=43 a,8. \f c16 b8 a4 e'8 | % 136
+  a,8. \f c16 b8 a4 e'8 | % 136
   d4. <g, b>4. | % 137
   a8. c16 b8 g4 bes8 | % 138
   a2. | % 139
@@ -441,7 +438,7 @@ PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxopho
   f4 -"accel." e8 dis4 dis8 | % 37
   e8. c16 a8 dis,4 c'8 | % 38
   \time 3/4  | % 38
-  c,4 \mp g'4 g4 | % 39
+  c4 \mp g4 g4 | % 39
   g4 f4 c'4 |
   e4 c4 e,4 | % 41
   e4 d4 a'16 \< b16 c16 d16 | % 42
@@ -554,10 +551,10 @@ PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxopho
 
 PartPThreeVoiceTwo =  \relative e' {% Voix 3, original Vibraphone 2, now Trompettes
   \global \clef "treble" \key g \major r2. | % 2
-  e'4. \mp e4. | % 3
+  e4. \mp e4. | % 3
   e4. e4. | % 4
   e4. ais4 b,8 | % 5
-  e4 g8 b4 b,8 | % 6
+  e4 g8 b4 b8 | % 6
   e4. e4. | % 7
   d4 cis8 c4 gis8 | % 8
   c8. b16 ais8 cis4 g8 | % 9
@@ -582,11 +579,11 @@ PartPThreeVoiceTwo =  \relative e' {% Voix 3, original Vibraphone 2, now Trompet
   b4 g8 b4 g8 | % 28
   c4 b8 ais4 fis8 | % 29
   g8. b16 ais8 ais4 b8 |
-  b'4. b4 g8 | % 31
+  b4. b4 g8 | % 31
   b4 g8 b4 g8 | % 32
   <d d'>4 cis'8 <c, c'>4 gis'8 | % 33
   <c, c'>8. b'16 ais8 <ais, cis>4 g'8 | % 34
-  \time 3/8  e4 e,8 | % 35
+  \time 3/8  e'4 e,8 | % 35
   \time 6/8  e'4 c8 e4 c8 | % 36
   f4 -"accel." e8 dis4 dis8 | % 37
   e8. c16 a8 dis,4 c'8 | % 38
@@ -608,7 +605,7 @@ PartPThreeVoiceTwo =  \relative e' {% Voix 3, original Vibraphone 2, now Trompet
   f'4 e8 dis8 e4 g,4 | % 53
   b2 a2 | % 54
   \time 3/4  | % 54
-  c'4 \mp g'4 g4 | % 55
+  c4 \mp g'4 g4 | % 55
   g4 f4 c'4 | % 56
   e4 c4 e,4 | % 57
   e4 d2 | % 58
@@ -616,7 +613,7 @@ PartPThreeVoiceTwo =  \relative e' {% Voix 3, original Vibraphone 2, now Trompet
   bes8 c8 des2 |
   a8 g8 f4 c'4 | % 61
   c2 \< <g d'>4 | % 62
-  <g, e'>8 \! \mf <g d'>8 <g f'>4 <g d'>4 | % 63
+  <g e'>8 \! \mf <g d'>8 <g f'>4 <g d'>4 | % 63
   <g e'>8 <g d'>8 <g f'>4 <g d'>4 | % 64
   <g e'>8 <g d'>8 <g f'>4 <g e'>4 | % 65
   \time 2/4  <f c'>4 <g d'>4 | % 66
@@ -643,12 +640,12 @@ PartPThreeVoiceTwo =  \relative e' {% Voix 3, original Vibraphone 2, now Trompet
   <b b'>2 <a a'>2 <g g'>2 | % 86
   <c c'>1. ~ ~ | % 87
   <c c'>2 <c bes'>1 | % 88
-  as'2 \mf f2 des'2 | % 89
+  as2 \mf f2 des'2 | % 89
   fis,2 b2 d,2 |
   as'2 ges4 f4 des'4 des,4 | % 91
   fis2 b2 d,2 | % 92
   \key f \major \time 2/4 | % 92
-  f,8 -"accel." \< g8 a8 bes8 | % 93
+  f8 -"accel." \< g8 a8 bes8 | % 93
   \time 4/4  | % 93
   r8 \! \f <f a>8 r8 <f a>8 r8 g8 r8 g8 | % 94
   r8 bes8 r8 bes8 r8 <f a>8 r8 <f a>8 | % 95
@@ -683,7 +680,7 @@ PartPThreeVoiceTwo =  \relative e' {% Voix 3, original Vibraphone 2, now Trompet
   <gis b>2. | % 123
   <fis, d'>2. | % 124
   fis'4 eis2 | % 125
-  a'4 \mf b4 cis4 | % 126
+  a4 \mf b4 cis4 | % 126
   cis4 b4 a4 | % 127
   gis4 a4 b4 | % 128
   a4 gis4 fis4 | % 129
@@ -694,7 +691,7 @@ PartPThreeVoiceTwo =  \relative e' {% Voix 3, original Vibraphone 2, now Trompet
   <fis a>2. | % 134
   <d' fis>4 <e gis>2 | % 135
   \key c \major \time 6/8 | % 135
-  a,4. \mf a4. | % 136
+  a4. \mf a4. | % 136
   b4. g4. | % 137
   a4. b4. | % 138
   <d, a'>2. | % 139
