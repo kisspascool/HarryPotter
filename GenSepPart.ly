@@ -37,6 +37,24 @@
 }
 
 \book {
+  \bookOutputName "pdf/Soprano sax"
+  \paper {
+    #(set-paper-size "a4")
+  }
+  \score {
+    <<
+    \new Staff
+    <<
+    \set Staff.instrumentName = "Sax Soprano"
+    \new Voice {\transpose bes c'{\transposition bes \sopranosax}}
+    \new Voice {\track}
+    >>
+    >>
+    %\layout {#(layout-set-staff-size 16)}
+  }
+}
+
+\book {
   \bookOutputName "pdf/Alto Sax"
   \paper {
     #(set-paper-size "a4")

@@ -399,6 +399,200 @@ PartPTwoVoiceOne =  \relative b' {% Voix 2, original Vibraphone 1, now Clarinet
   cis2. \fermata \bar "|."
 }
 
+sopranosax =  \relative b' {% Voix 2, original Vibraphone 1, now Clarinet
+  \global \clef "treble" \key g \major r4. r4
+  b8 \mp | % 2
+  e8. g16 fis8 e8 r8 b'8 | % 3
+  a4. fis4. | % 4
+  e8. g16 fis8 dis4 f8 | % 5
+  b,4. b4 b8 | % 6
+  e8. g16 fis8 e4 b'8 | % 7
+  <d,, g bes d>4. \mf <c f as c>4. | % 8
+  <c e a c>4. <cis e fis cis'>4. | % 9
+  e'4. ~ e4 g8 |
+  b4 g8 b4 g8 | % 11
+  c4 b8 ais4 fis8 | % 12
+  g8. b16 ais8 ais,4 b8 | % 13
+  b'4. ~ b4 g8 | % 14
+  b4 g8 b4 g8 | % 15
+  <d, g bes d>4. <c f as c>4. | % 16
+  <c e a c>4. <cis e fis cis'>4. | % 17
+  e4 g8 b4 b,8 | % 18
+  e4 \f g8 fis4 b8 | % 19
+  e8. g16 fis8 e4 b'8 |
+  a4. fis4 ~ fis8 | % 21
+  e8. g16 fis8 dis4 f8 | % 22
+  b,4. ~ b4 b,8 | % 23
+  e8 \< g8 b8 e8 g8 b8 | % 24
+  <d, g d'>4 \! \mf cis'8 <c, fis c'>4 gis'8 | % 25
+  <c, e c'>8. b'16 ais8 cis,4 g'8 | % 26
+  e8 e,8 g8 b4. | % 27
+  <b, e>8 \f <e g>8 <g b>8 <e g>8 <g b>8 <b e>8 | % 28
+  <e g>8 <b e>8 <g b>8 <fis cis'>8 <cis ais'>8 <ais fis'>8 | % 29
+  <b e>8 <e g>8 <g b>8 <e g>8 <g b>8 <b e>8 |
+  \tuplet 3/2  {
+    e,16 g16 b,16
+  }
+  \tuplet 3/2  {
+    e16 g16 b16
+  }
+  \tuplet 3/2  {
+    e16 g16 b16
+  }
+  \tuplet 3/2  {
+    e16 b16 g16
+  }
+  \tuplet 3/2  {
+    b16 g16 e16
+  }
+  \tuplet 3/2  {
+    b16 g16 e16
+  }
+  | % 31
+  e8 <g b>8 <fis ais>8 <g b>4. | % 32
+  <d' g d'>4 cis'8 <c, f c'>4 gis'8 | % 33
+  <c, e c'>8. b'16 ais8 <ais, cis>4 g'8 | % 34
+  \time 3/8  e4 e8 | % 35
+  \clef "treble^8" \time 6/8 e'4 c8 e4 c8 | % 36
+  f4 -"accel." e8 dis4 dis8 | % 37
+  e8. c16 a8 dis,4 c8 | % 38
+  \clef "treble" \time 3/4 | % 38
+  <e, g e'>2. \mp | % 39
+  <g b f'>2. |
+  <e g e'>2. | % 41
+  <g b f'>2 a16 \< b16 a32 b32 c32 d32 | % 42
+  <g, c e>8 \! \mf <g c d>8 <g c f>4 <g c d>4 | % 43
+  <g c e>8 <g c d>8 <g c f>4 <g c d>4 | % 44
+  <g c e>8 <g c d>8 <g c f>4 <g c e>4 | % 45
+  \time 2/4  <f a c>4 <g b d>4 | % 46
+  \time 4/4  <g b>8 <g b>8 <g b>8 <g b>8 <g b>8
+  <g b>8 <fis ais>8 <g b>8 | % 47
+  <gis c>4 <g b>8 <fis ais>8 <g b>4 <e g>4 | % 48
+  <e a>4 <e a>8 <dis gis>8 <e a>4 <a, c>4 | % 49
+  <g b>8 r8 <b e>8 <e g>8 <fis ais>2 |
+  <g b>8 <g b>8 <g b>8 <g b>8 <g b>8 <g b>8 <fis ais>8 <g b>8 | % 51
+  <ais d>4 <a c>8 <g b>8 <a c>4 <c, f>4 | % 52
+  <gis' c>4 <g b>8 <fis ais>8 <g b>4 <b, e>4 | % 53
+  <e g>2 <b dis>2 | % 54
+  \time 3/4  | % 54
+  \tuplet 3/2  {
+    c8 \mp g'8 e'8
+  }
+  g8 e'8 c8 g8 | % 55
+  <es gis c>4 <f a c>4 <g, c'>4 | % 56
+  \tuplet 3/2  {
+    c,8 g'8 e'8
+  }
+  \tuplet 3/2  {
+    g8 e8 g,8
+  }
+  \tuplet 3/2 {
+    e'8 g8 g,8
+  }
+  | % 57
+  \tuplet 3/2  {
+    c,8 g'8 d'8
+  }
+  \tuplet 3/2  {
+    g,8 d'8 g,8
+  }
+  \tuplet 3/2  {
+    g'8 d8 g,8
+  }
+  | % 58
+  c,8 as'8 es'8 as8 es8 as,8 | % 59
+  ges8 des'8 bes'8 des8 bes8 ges8 |
+  f8 e8 d4 a'4 | % 61
+  c,4 \< g'4 <g, d'>4 | % 62
+  <g c e>8 \! \f <g c d>8 <g c f>4 <g c d>4 | % 63
+  <g c e>8 <g c d>8 <g c f>4 <g c d>4 | % 64
+  <g c e>8 <g c d>8 <g c f>4 <g c e>4 | % 65
+  \time 2/4  <f a c>4 <g b d>4 | % 66
+  \time 4/4  <c e>8 <c e>8 <c e>8 <c e>8 <c e>8
+  <c e>8 <b dis>8 <c e>8 | % 67
+  <cis f>4 <c e>8 <b dis>8 <c e>4 <a c>4 | % 68
+  <a d>4 <a d>8 <gis cis>8 <a d>4 <d, f>4 | % 69
+  <c e>8 r8 <e a>8 <a c>8 <b dis>2 |
+  <c e>8 <c e>8 <c e>8 <c e>8 <c e>8 <c e>8 <b dis>8 <c e>8 | % 71
+  <dis g>4 <cis f>8 <c e>8 <cis f>4 <f, ais>4 | % 72
+  <cis' f>4 <c e>8 <b dis>8 <c e>4 <e, a>4 | % 73
+  <gis c>2 <b, e>4 e16 d16 c16 b16 | % 74
+  \key as \major \time 3/2 | % 74
+  <as' f'>1. \mf |%75
+  <as f'>1. | % 76
+  <as f'>2 <f c'>2 <c as'>2 | % 77
+  <as' as'>2 \< <g g'>2 <f f'>2 | % 78
+  <as f'>2 <f des'>2 <des as'>2 | % 79
+  <as' as'>2 <g g'>2 <f f'>2 |
+  <as f'>2 \! \f <f c'>2 <c as'>2 | % 81
+  <as' as'>2 \< <g g'>2 <f f'>2 | % 82
+  <as f'>2 <f des'>2 <des as'>2 | % 83
+  <as' as'>2 <g g'>2 <f f'>2 | % 84
+  <fis fis'>2 \! \ff <fis d'>2 <d b'>2 | % 85
+  <b' b'>2 <a a'>2 <g g'>2 | % 86
+  <g g'>2 <es es'>2 <es c'>2 | % 87
+  <c' c'>2 <bes bes'>2 <as as'>2 | % 88
+  <des, f>2 \mf <f as>2 <des f as>2 | % 89
+  <b d fis>2 <d fis>2 <b d fis>2 |
+  <as des f>2 <des f>2 <des f as>2 | % 91
+  <b d fis>2 <d fis>2 <b d f>2 | % 92
+  \key f \major \time 2/4 | % 92
+  <f' f'>8 -"accel." \< <g g'>8 <a a'>8 <bes bes'>8 | % 93
+  \time 4/4  | % 93
+  c4. \! \f c16 c16 c4 c4 | % 94
+  d4. e16 f16 c4 f,4 | % 95
+  bes4. c16 bes16 a8 c8 e8 f8 | % 96
+  g4. f16 e16 d8 c8 g'16 f16 e16 d16 | % 97
+  c4. c16 c16 c4 c4 | % 98
+  d4. e16 f16 c4 f,4 | % 99
+  bes4. c16 bes16 a8 c8 e8 f8 |
+  g4 f16 e16 d16 e16 f4 f,4 | % 101
+  r8 e'16 e16 e8 e8 e8 e8 f8 g8 | % 102
+  f8. e16 d8 a8 r8 a8 r8 a8 | % 103
+  r8 d16 d16 d8 d8 d8 d8 e8 f8 | % 104
+  e8. d16 c8 g8 g16 a16 b16 c16 d16 e16 f16 g16 | % 105
+  r8 e16 e16 e8 e8 e8 e8 f8 g8 | % 106
+  f8. e16 d8 a8 r8 a8 r8 a8 | % 107
+  r8 d16 d16 d8 d8 d8 d8 g16 f16 e16 d16 | % 108
+  g16 f16 e16 d16 c16 bes16 a16 g16 a16 bes16 c16 d16 c16 bes16 a16
+  bes16 | % 109
+  c4 r8 c16 c16 c4 c4 |
+  d4 r8 e16 f16 c4 f,4 | % 111
+  bes4 r8 c16 bes16 a8 c8 e8 f8 | % 112
+  g4. f16 e16 d8 c8 g'16 f16 e16 d16 | % 113
+  c4 r8 c16 c16 c4 c4 | % 114
+  d4 r8 e16 f16 c4 f,4 | % 115
+  bes4 r8 c16 bes16 a8 c8 e8 f8 | % 116
+  g8 r8 e4 f2 | % 117
+  \key a \major \time 3/4 | % 117
+  a,4 \p b4 cis4 | % 118
+  cis4 b4 a4 | % 119
+  gis4 a4 b4 |
+  a4 gis4 fis4 | % 121
+  <d a'>2. | % 122
+  <cis eis>2. | % 123
+  <d gis>2 fis4 | % 124
+  <gis, cis>2. | % 125
+  <a cis e>2. \mp | % 126
+  <gis a cis e>2. | % 127
+  <fis a cis d>2. | % 128
+  <b e a>2. | % 129
+  <d e a>2. \mf |
+  <e gis a cis>2. | % 131
+  <gis d'>2. | % 132
+  gis8 a8 b4 cis4 | % 133
+  d4 e2 | % 134
+  <a, d fis>4 <b e gis>2 | % 135
+  \key c \major \time 6/8 | % 135
+  a8. \mf c16 b8 a4 e'8 | % 136
+  d4. <g, b>4. | % 137
+  a8. c16 b8 g4 bes8 | % 138
+  <d, a'>2. | % 139
+  <cis a'>2. \fermata |
+  cis2. \fermata \bar "|."
+}
+
+
 PartPThreeVoiceOne =  \relative e' {% Voix 3, original Vibraphone 2, now Saxophone
   \global \clef "treble" \key g \major r2. | % 2
   e4. \mp e4. | % 3
